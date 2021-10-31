@@ -1,0 +1,135 @@
+body {
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: 9rem 5rem max-content 1fr 4rem;
+    row-gap: 1px;
+    
+
+}
+
+header {
+    background-color:  #f1efe1   ;
+    text-align: center;
+	text-align:center;font-family: 'Rancho', serif;
+	color: #192954;
+    font-size: 38px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #192954;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    column-gap: 1rem;
+	font-size: 24px;
+}
+
+nav a {
+    color: white;
+	border-right-color: yellow;
+    
+    text-decoration: none;
+    padding: 1rem;
+    height: 1rem;
+	text-align:center;font-family: 'Rancho', serif;
+}
+
+aside {
+    background-color:   #4c9f38;
+    padding: 1.5rem;
+	font-size: 18px;
+}
+
+main {
+     background-image: url("../img/fondo.jpg");
+    text-align: center;
+    display: grid;
+	font-family: Arial;
+  font-size: 17px;
+}
+
+footer {
+    background-color: #192954;
+    text-align: center;
+	color: white;
+	text-align:center;font-family: 'Rancho', serif;
+	font-size: 20px;
+	padding-top:1rem;
+	
+	
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
+    display: inline;
+    font-size: 0.5rem;
+	text-align: center;
+}
+
+aside h3, li{
+   /* display:flex   display: inline; */
+   
+   
+   text-align:left;font-family: 'Rancho', serif;
+   color: white;
+   margin-left: 1rem;
+   
+   
+   }
+   
+a.menu:link {color:lightgray;text-decoration:none;}
+a.menu:visited {color:white;text-decoration:none;}
+a.menu:hover {text-decoration:underline;}
+
+a.ex1:link{color:lightgray;text-decoration:none;font-family: 'Rancho', serif; }
+a.ex1:visited{color:white;text-decoration:none;font-family: 'Rancho', serif; }
+a.ex1:hover {text-decoration:underline;}
+
+.tablas th {
+    text-align: right;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button_sesion {border-radius: 25px;}
+
+.bg-img {
+  /* The image used */
+ 
+  background-color: white;
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align:left;font-family: 'Rancho', serif;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  
+  padding: 20px;
+}

@@ -1,0 +1,69 @@
+<html>
+<head>
+<title> Gestion de Reservas</title>
+<style>
+
+body{
+ padding: 2tem;
+}
+
+#formulario_reserva{
+ display: grid;
+ grid-template-columns: 5rem 10rem;
+ row-gap: 1rem;
+ column-gap:0.5rem;
+}
+/*
+main{
+ display: grid;
+ grid-template-columns: 1rem 3rem;
+}
+*/
+
+
+</style>
+<script src="js/reservas.js"></script>
+</head>
+<body>
+<header>
+<h1> Gestion de Reservas</h1>
+</header>
+<main>
+<div>
+<h2>Registrar Reserva</h2>
+<form id="formulario_reserva" action="#" method="post">
+<label for ="cliente">Nombre del Usuario</label>
+<input type="text" name="cliente">
+<label for ="documento">Documento</label>
+<input type="text" name="documento">
+<label for ="Tipo de paquete">tipo de Paquete</label>
+<div>
+<input type="radio" name="sencillo" value="0">
+<input type="radio" name="completo" value="1">
+</div>
+<label for ="transporte">Incluir trasporte al punto de partida</label>
+<input type="checkbox" name="transporte_si" value="Si">
+<label for="num_transporte">Cantidad de transporte</label>
+<input type="number" name="num_transporte">
+<label for="num_personas">N. Personas</label>
+<input type="number" name="num_personas">
+<button type="reset">Limpiar</button>
+<button onclick="procesarInformation()" type="summit">Enviar</button>
+</form>
+</div>
+<div>
+<h2>Listado de Paquetes</h2>
+
+<table>
+<thead>
+ <th>Sierra Nevada</th>
+ <th>Cocora</td>
+</thead>
+<tbody id="datos_reserva">
+</tbody>
+</table>
+</div>
+</main>
+
+</body>
+<html>
